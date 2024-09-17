@@ -1,7 +1,7 @@
 package com.qaaston.lesson1;
 
 import java.util.Arrays;
-public class Lesson_1 {
+public class Lesson1 {
     public static void main (String[] args) {
         printThreeWords();
         checkSumSign();
@@ -16,7 +16,7 @@ public class Lesson_1 {
         fillEmptyArray(100);
         lessSixMultiplyTwo();
         diagonalArray(10);
-
+        System.out.println(Arrays.toString(initialValue(5,1996)));
 
     }
     // 1
@@ -147,6 +147,14 @@ public class Lesson_1 {
         for (int i = 0; i < array.length; i++) {
             System.out.println(Arrays.toString(array[i]));
         }
+    }
+    // 14
+    public static int[] initialValue (int len, int value) {
+        int[] initialVal = new int[len];
+        for (int i=0; i < len; i++) {
+            initialVal[i] = value;
+        }
+       return initialVal;
     }
 
 }
